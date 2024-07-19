@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &419299204470956827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5876892912646227350}
+  - component: {fileID: 81179444949734338}
+  - component: {fileID: 5599475232806703003}
+  - component: {fileID: 1615287054864982728}
+  - component: {fileID: 5510593482949896144}
+  - component: {fileID: 5719118300227378443}
+  m_Layer: 0
+  m_Name: XR Origin
+  m_TagString: XROrigin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5876892912646227350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419299204470956827}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &81179444949734338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419299204470956827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba27784756fb340b2bec728a9eaff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handleColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &5599475232806703003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419299204470956827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
+  m_OriginBaseGameObject: {fileID: 419299204470956827}
+  m_CameraFloorOffsetObject: {fileID: 0}
+  m_RequestedTrackingOriginMode: 0
+  m_CameraYOffset: 1.1176
+--- !u!114 &1615287054864982728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419299204470956827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedLibrary: {fileID: 11400000, guid: 2eb453e2e110b1043b0013cd378c44c3,
+    type: 2}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 0}
+--- !u!114 &5510593482949896144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419299204470956827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4d6fa6cce642cb4c8cb2fba6dd641b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1615287054864982728}
+  baseLaser: {fileID: 8357743357663558279, guid: ccba2415476bf354d9a2e9c3a38aa705,
+    type: 3}
+  basePrism: {fileID: 3115401048858482348, guid: 6bb5b008ba8cfde428417d19eab4d07e,
+    type: 3}
+  newLaser: {fileID: 0}
+  newPrisme: {fileID: 0}
+--- !u!114 &5719118300227378443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419299204470956827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad99c76285475448bfcbe5e5157f1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTrackeur: {fileID: 5510593482949896144}
+  menuPrismeGameobject: {fileID: 0}
+  menuLaserGameobject: {fileID: 0}
+  arCamera: {fileID: 0}
+  PrismMat:
+  - {fileID: 2100000, guid: 8ce8095b1910d1642b9530ab024223a2, type: 2}
+  - {fileID: 2100000, guid: 7fbb55821b80a7f4babc85df3ecdffa0, type: 2}
+  - {fileID: 2100000, guid: b2936c180a7a86c4397840b159423ef5, type: 2}
+  - {fileID: 2100000, guid: 75a2e40c1d996a1468a61a9df0414d94, type: 2}
+  - {fileID: 2100000, guid: 17bb0809b487886448c45e983640e34b, type: 2}
+  - {fileID: 2100000, guid: 29fcb25de6f99d144980fcb0e6141a28, type: 2}
+  prisms:
+  - {fileID: 3115401048858482348, guid: 6bb5b008ba8cfde428417d19eab4d07e, type: 3}
+  - {fileID: 4793274014018865601, guid: d5ef67322cd9d5747b256cf5bd7684f8, type: 3}
+  - {fileID: 5250191657374267015, guid: ceecf2ab85b708646bdbe92a977acd02, type: 3}
+  lasers:
+  - {fileID: 8357743357663558279, guid: ccba2415476bf354d9a2e9c3a38aa705, type: 3}
+  - {fileID: 6344139564555257565, guid: 9a864ca8fea7318429e91ba16ccc7c6e, type: 3}
+  - {fileID: 5411937918791974883, guid: 73f1e6a3d46ffed4e865e59978bf88b8, type: 3}
+  selectedPrime: {fileID: 0}
+  selectedLaser: {fileID: 0}
+  isLaser: 0
+  isPrism: 0
